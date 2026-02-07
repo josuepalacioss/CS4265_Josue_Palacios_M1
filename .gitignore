@@ -1,0 +1,26 @@
+# Data (never commit datasets)
+data/
+*.json
+*.parquet
+*.csv
+
+# Spark / Hadoop artifacts
+spark-warehouse/
+*.crc
+*.log
+
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment / local config
+.env
+.env.*
+*.local
+
+# OS / Editor noise
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
