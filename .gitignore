@@ -1,25 +1,27 @@
-# Data (never commit datasets)
+# -----------------------------
+# Data (raw and processed)
+# -----------------------------
 data/
 *.json
 *.parquet
 *.csv
 
-# Spark / Hadoop artifacts
+# -----------------------------
+# Spark artifacts
+# -----------------------------
 spark-warehouse/
-*.crc
 *.log
+*.crc
 
-# Python artifacts
-__pycache__/
-*.pyc
-*.pyo
-
+# -----------------------------
 # Environment / local config
+# -----------------------------
 .env
 .env.*
-*.local
 
-# OS / Editor noise
+# -----------------------------
+# OS / Editor files
+# -----------------------------
 .DS_Store
 Thumbs.db
 .vscode/
