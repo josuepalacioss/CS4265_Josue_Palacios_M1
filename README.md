@@ -23,16 +23,21 @@ great effort.
 This project aims to address the following questions:
 • How does the volume of court cases and documents change over time across jurisdic-
 tions?
+
 • How do federal and state court datasets differ in coverage and completeness?
+
 • What trends exist in case counts, document counts, and court activity over time?
+
 • How complete are metadata fields across sources?
 
 At scale, these questions introduce several challenges:
+
 • Data volume by the hundreds of thousands to over a million records and the resulting
 space.
-1
+
 • Heterogeneous ingestion through combining incremental API based data with large
 bulk datasets.
+
 • Schema variability that offers differing field structures and naming across sources.
 Scope
 
@@ -42,21 +47,29 @@ Data pipeline for analyzing structured metadata derived from public court docume
 In Scope
 Batch ingestion of heterogeneous public court datasets:
 • Federal court metadata from the CourtListener REST API.
+
 • State court metadata from the Harvard Caselaw Access Project (Georgia) bulk archives.
+
 Schema normalization and validation to unify heterogeneous JSON sources into a shared
 Parquet-based data model.
 Metadata analytics
 • Case and document volume trends over time.
+
 • Court and jurisdiction activity summaries.
+
 • Completeness and coverage statistics for key metadata fields.
+
 Distributed query execution using Spark SQL with partitioned Parquet datasets.
 Local execution with a cloud-ready design that supports scaling via additional partitions
 and executors.
 
 Out of Scope
 • Parsing, indexing, or analyzing the contents of court case PDF documents.
+
 • Natural language processing, machine learning, or data mining.
+
 • Legal interpretation or reasoning over court opinions.
+
 • Real time or streaming data ingestion.
 
 Dataset Source
