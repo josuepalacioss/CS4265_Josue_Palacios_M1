@@ -12,6 +12,8 @@ bulk archives, but they are often fragmented across institutions. By ingesting a
 the document metadata we can extract courts, dates, case types, document counts, and
 completeness indicators. This domain is motivated by the need for scalable infrastructure
 to support legal research and analysis of judicial activity using large public datasets.
+
+
 Problem Statement
 Public court data exists on a large scale but is difficult to analyze efficiently due to the sheer
 volume, heterogeneity, and different access constraints. Federal and state court datasets are
@@ -40,6 +42,8 @@ space.
 bulk datasets.
 
 • Schema variability that offers differing field structures and naming across sources.
+
+
 Scope
 
 This project focuses on the design and implementation of a distributed, batch-oriented Big
